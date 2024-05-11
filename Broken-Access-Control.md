@@ -53,7 +53,7 @@ https://example.com/app/admin_getappInfo
 ## Categories
 
 - [Authorization](Authorization.md)
-- [Insecure Direct Object Reference](Insecure_Direct_Object_Reference.md)
+- [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
 - [Transaction Authorization](Transaction_Authorization.md)
 - [Cross-Site Request Forgery](Cross-Site-Request-Forgery.md)
 
