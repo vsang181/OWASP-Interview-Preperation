@@ -54,7 +54,7 @@ https://example.com/app/admin_getappInfo
 
 - [Authorization](Authorization.md)
 - [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
-- [Transaction Authorization](Transaction_Authorization.md)
+- [Transaction Authorization](Transaction-Authorization.md)
 - [Cross-Site Request Forgery](Cross-Site-Request-Forgery.md)
 
 ## Let's Connect
