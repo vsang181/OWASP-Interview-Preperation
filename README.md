@@ -5,11 +5,23 @@ The OWASP Top 10 is like a guidebook for developers and website security. It sho
 Businesses should use this guide and make sure their websites are safe from these dangers. Following the OWASP Top 10 is a great way to kickstart a shift towards a safer way of making software in your company. 
 
 1. A01:2021 [Broken Access Control](Broken-Access-Control.md)
-  
+- [Authorization](Authorization.md)
+- [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
+- [Transaction Authorization](Transaction-Authorization.md)
+- [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)  
 2. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
    
 3. A03:2021 [Injection](Injection.md)
-
+- [Injection Prevention](Injection-Prevention.md)
+- [LDAP Injection Prevention)](LDAP-Injection-Prevention.md)
+- [OS Command Injection Defense](OS-Command-Injection-Defense.md)
+- [Injection Prevention in Java](Injection-Prevention-in-Java.md)
+- [SQL Injection Prevention](SQL-Injection-Prevention.md)
+- [Query Parameterization](Query-Parameterization.md)
+- [Cross Site Scripting (XSS) Prevention](Cross-Site-Scripting-Prevention.md)
+- [DOM based XSS Prevention](DOM-based-XSS-Prevention.md)
+- [XSS Filter Evasion](XSS-Filter-Evasion.md)
+- [Content Security Policy](Content-Security-Policy.md)
 4. A04:2021 [Insecure Design](Insecure-Design.md)
 
 5. A05:2021 [Security Misconfiguration](Security-Misconfiguration.md)
