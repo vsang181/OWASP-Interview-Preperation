@@ -49,6 +49,7 @@ Mitigation: Implement real-time monitoring using automated tools or SIEM systems
 ```
 
 By addressing issues related to security logging and monitoring failures and implementing appropriate mitigation strategies, developers can strengthen the security posture of their Java applications, enhancing their ability to detect, respond to, and mitigate security incidents effectively.
+
 ## Categories
 
 - [Logging](Logging.md)
