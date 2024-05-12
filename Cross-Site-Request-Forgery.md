@@ -1,5 +1,7 @@
 # Cross-Site Request Forgery (CSRF)
 
+![csrf-cross-site-request-forgery](https://github.com/vsang181/OWASP-Interview-Preperation/assets/28651683/40ce9f2c-96cc-4468-9288-bdf13a463c13)
+
 Cross-Site Request Forgery (CSRF) is a type of attack that tricks the victim into performing actions they don't intend to on a web application where they are authenticated. Understanding CSRF and its prevention techniques is crucial for web application security.
 
 ## Definition
