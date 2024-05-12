@@ -5,27 +5,27 @@ The OWASP Top 10 is like a guidebook for developers and website security. It sho
 Businesses should use this guide and make sure their websites are safe from these dangers. Following the OWASP Top 10 is a great way to kickstart a shift towards a safer way of making software in your company. 
 
 1. A01:2021 [Broken Access Control](Broken-Access-Control.md)
-  1.1 [Authorization](Authorization.md)
-  1.2 [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
-  1.3 [Transaction Authorization](Transaction-Authorization.md)
-  1.4 [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)
-2. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
+  1. [Authorization](Authorization.md)
+  2. [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
+  3. [Transaction Authorization](Transaction-Authorization.md)
+  4. [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)
+5. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
 
-3. A03:2021 [Injection](Injection.md)
+6. A03:2021 [Injection](Injection.md)
 
-4. A04:2021 [Insecure Design](Insecure-Design.md)
+7. A04:2021 [Insecure Design](Insecure-Design.md)
 
-5. A05:2021 [Security Misconfiguration](Security-Misconfiguration.md)
+8. A05:2021 [Security Misconfiguration](Security-Misconfiguration.md)
 
-6. A06:2021 [Vulnerable and Outdated Components](Vulnerable-and-Outdated-Components.md)
+9. A06:2021 [Vulnerable and Outdated Components](Vulnerable-and-Outdated-Components.md)
 
-7. A07:2021 [Identification and Authentication Failures](Identification-and-Authentication-Failures.md)
+10. A07:2021 [Identification and Authentication Failures](Identification-and-Authentication-Failures.md)
 
-8. A08:2021 [Software and Data Integrity Failures](Software-and-Data-Integrity-Failures.md)
+11. A08:2021 [Software and Data Integrity Failures](Software-and-Data-Integrity-Failures.md)
 
-9. A09:2021 [Security Logging and Monitoring Failures](Security-Logging-and-Monitoring-Failures.md)
+12. A09:2021 [Security Logging and Monitoring Failures](Security-Logging-and-Monitoring-Failures.md)
 
-10. A10:2021 Server-Side Request Forgery SSRF](Server-Side-Request-Forgery.md)
+13. A10:2021 Server-Side Request Forgery SSRF](Server-Side-Request-Forgery.md)
 
 [Official cheat sheet for OWASP](https://cheatsheetseries.owasp.org/IndexTopTen.html) 
 
