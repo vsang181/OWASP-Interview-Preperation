@@ -13,7 +13,7 @@ Businesses should use this guide and make sure their websites are safe from thes
 7. A07:2021 [Identification and Authentication Failures](Identification-and-Authentication-Failures.md)
 8. A08:2021 [Software and Data Integrity Failures](Software-and-Data-Integrity-Failures.md)
 9. A09:2021 [Security Logging and Monitoring Failures](Security-Logging-and-Monitoring-Failures.md)
-10. A10:2021 Server-Side Request Forgery (SSRF)](Server-Side-Request-Forgery.md)
+10. A10:2021 Server-Side Request Forgery SSRF](Server-Side-Request-Forgery.md)
 
 [Official cheat sheet for OWASP](https://cheatsheetseries.owasp.org/IndexTopTen.html) 
 
