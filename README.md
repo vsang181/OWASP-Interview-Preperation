@@ -5,7 +5,10 @@ The OWASP Top 10 is like a guidebook for developers and website security. It sho
 Businesses should use this guide and make sure their websites are safe from these dangers. Following the OWASP Top 10 is a great way to kickstart a shift towards a safer way of making software in your company. 
 
 1. A01:2021 [Broken Access Control](Broken-Access-Control.md)
-
+- [Authorization](Authorization.md)
+- [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
+- [Transaction Authorization](Transaction-Authorization.md)
+- [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)
 2. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
 
 3. A03:2021 [Injection](Injection.md)
