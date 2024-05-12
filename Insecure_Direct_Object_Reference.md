@@ -1,23 +1,50 @@
 # Insecure Direct Object Reference (IDOR)
 
-## Understanding IDOR:
+![insecure-direct-object-reference-example](https://github.com/vsang181/OWASP-Interview-Preperation/assets/28651683/ddd41985-8685-446f-97c9-095e737af5fc)
 
-IDOR occurs when attackers manipulate identifiers in a web app's URLs or parameters to access or modify objects they shouldn't have access to. This happens due to missing access control checks, which fail to verify if a user should be allowed to view or modify specific data.
+Insecure Direct Object Reference (IDOR) is a critical security vulnerability that occurs when an application exposes internal implementation objects, such as files or database records, to users without proper authorization checks. Understanding and mitigating IDOR vulnerabilities is essential to prevent unauthorized access to sensitive data.
 
-## Examples:
+## Definition
 
-Imagine a user accessing their profile through a URL like this: https://example.org/users/123. Here, "123" is the user's record in the database. If an attacker changes this number to, say, "124" and gains access to another user's information, it's IDOR. Similarly, in a form submission scenario, if the app doesn't properly check permissions, attackers can manipulate hidden fields like "user_id" to modify other users' profiles.
+IDOR refers to the situation where an attacker can access and manipulate internal object references, such as database keys or file paths, to gain unauthorized access to resources or perform unauthorized actions within an application.
 
-## Mitigation Strategies:
+## Common Issues
 
-1. **Implement Access Control**: Ensure each object access is checked against user permissions. Web frameworks offer tools for this.
-2. **Use Complex Identifiers**: Employing complex identifiers like GUIDs can make guessing valid values impractical for attackers. But remember, access control is vital regardless of identifier complexity.
-3. **Avoid Exposing Identifiers**: If possible, don't expose identifiers in URLs or POST bodies. Instead, use session information to determine the authenticated user.
-4. **Secure Object Lookup**: When fetching objects based on primary keys, make sure to limit searches to datasets users have access to. For example, in Ruby on Rails, search only within projects related to the current user.
-5. **Verify Permissions**: Always check user permissions whenever an access attempt is made. This should be a structural part of your web framework's recommended approach.
-6. **Defense-in-Depth Measures**: Consider replacing enumerable numeric identifiers with more complex, random ones. This could involve adding a column with random strings in the database table and using those strings in URLs. Alternatively, use UUIDs or other long random values as primary keys. Avoid encrypting identifiers as it adds complexity and may introduce security risks.
+OWASP highlights several common IDOR vulnerabilities, including:
 
-By following these strategies, you can significantly reduce the risk of IDOR vulnerabilities in your web application.
+- **Lack of proper authorization checks**: Failing to verify user permissions before accessing or modifying sensitive objects, allowing attackers to bypass access controls.
+- **Exposing sensitive object references in URLs or parameters**: Including direct references to internal objects in URLs or parameters, making it easy for attackers to manipulate them.
+- **Insufficient access controls on direct object references**: Allowing users to access or modify objects directly through their references, bypassing access controls implemented at higher levels of the application.
+
+## Mitigation Strategies
+
+To mitigate IDOR vulnerabilities, developers should implement the following strategies:
+
+- **Implement proper authorization checks**: Ensure that all access to sensitive resources or functionalities is properly authenticated and authorized based on user roles and permissions.
+- **Use indirect references for sensitive objects**: Avoid exposing direct references to internal objects in URLs or parameters, and instead use indirect references or identifiers that are not easily guessable or tamperable.
+- **Enforce access controls at the object level**: Implement access controls directly on objects to prevent unauthorized access or modification, regardless of how they are accessed within the application.
+- **Implement input validation and sanitization**: Validate and sanitize user input to prevent injection attacks and ensure that only valid and authorized object references are processed by the application.
+- **Encrypt sensitive object references**: Use encryption or obfuscation techniques to protect sensitive object references from being intercepted or manipulated by attackers.
+- **Regularly review access controls**: Conduct regular security reviews and audits to identify and address any weaknesses or misconfigurations in access control mechanisms that could lead to IDOR vulnerabilities.
+- **Educate developers and users**: Provide training and awareness programs for developers and users to understand the risks associated with IDOR vulnerabilities and the importance of proper access controls.
+
+## Scenario 1:
+
+The application allows users to access sensitive files by directly manipulating file paths in the URL, leading to potential unauthorized access to confidential documents.
+
+```
+https://example.com/app/downloadFile?file=/path/to/confidential_document.pdf
+```
+
+## Scenario 2:
+
+The application exposes internal database keys in URLs, allowing attackers to manipulate them to access or modify sensitive records without proper authorization checks.
+
+```
+https://example.com/app/viewRecord?recordId=12345
+```
+
+Addressing these vulnerabilities through proper access controls and input validation helps prevent unauthorized access to sensitive data and enhances the overall security posture of the application.
 
 ## Let's Connect
 
