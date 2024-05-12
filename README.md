@@ -9,23 +9,28 @@ Businesses should use this guide and make sure their websites are safe from thes
   2. [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
   3. [Transaction Authorization](Transaction-Authorization.md)
   4. [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)
-5. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
 
-6. A03:2021 [Injection](Injection.md)
 
-7. A04:2021 [Insecure Design](Insecure-Design.md)
 
-8. A05:2021 [Security Misconfiguration](Security-Misconfiguration.md)
 
-9. A06:2021 [Vulnerable and Outdated Components](Vulnerable-and-Outdated-Components.md)
 
-10. A07:2021 [Identification and Authentication Failures](Identification-and-Authentication-Failures.md)
+2. A02:2021 [Cryptographic Failures](Cryptographic-Failures.md)
 
-11. A08:2021 [Software and Data Integrity Failures](Software-and-Data-Integrity-Failures.md)
+3. A03:2021 [Injection](Injection.md)
 
-12. A09:2021 [Security Logging and Monitoring Failures](Security-Logging-and-Monitoring-Failures.md)
+4. A04:2021 [Insecure Design](Insecure-Design.md)
 
-13. A10:2021 Server-Side Request Forgery SSRF](Server-Side-Request-Forgery.md)
+5. A05:2021 [Security Misconfiguration](Security-Misconfiguration.md)
+
+6. A06:2021 [Vulnerable and Outdated Components](Vulnerable-and-Outdated-Components.md)
+
+7. A07:2021 [Identification and Authentication Failures](Identification-and-Authentication-Failures.md)
+
+8. A08:2021 [Software and Data Integrity Failures](Software-and-Data-Integrity-Failures.md)
+
+9. A09:2021 [Security Logging and Monitoring Failures](Security-Logging-and-Monitoring-Failures.md)
+
+10. A10:2021 Server-Side Request Forgery SSRF](Server-Side-Request-Forgery.md)
 
 [Official cheat sheet for OWASP](https://cheatsheetseries.owasp.org/IndexTopTen.html) 
 
@@ -36,3 +41,5 @@ I welcome your insights, feedback, and opportunities for collaboration. Together
 - **LinkedIn**: (https://www.linkedin.com/in/aashwadhaama/)
 
 I look forward to connecting with fellow cybersecurity enthusiasts and professionals to share knowledge and work together towards a more secure digital environment.
+
+  
