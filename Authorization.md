@@ -1,27 +1,57 @@
 # Authorization
 
-## Understanding Authorization:
+Authorization is a critical aspect of web application security that governs what actions users are allowed to perform within the system. Proper implementation of authorization mechanisms is essential to prevent unauthorized access and maintain data confidentiality and integrity.
 
-Authorization is about verifying whether a specific request is allowed for a particular entity, which is different from authentication, where identity is verified. For instance, just because a user logged in doesn't mean they have access to everything in the system. Authorization is crucial in ensuring users can only access what they're supposed to.
+## Definition
 
-## Why It Matters:
+Authorization refers to the process of determining whether a user has the necessary permissions to perform a requested action within an application. It involves enforcing access control policies based on the user's identity, role, or other attributes.
 
-Authorization flaws are a big deal for web apps. They can lead to significant security risks, with potential consequences ranging from minor breaches to severe data compromise or service disruption.
+## Common Issues
 
-## Recommendations:
-1. **Least Privileges**: Only grant the minimum necessary access to users. Think about who needs access to what and when. It's easier to add permissions later if needed than to take them away.
-2. **Deny by Default**: Always deny access unless explicitly allowed. Don't assume access is okay unless it's been specifically approved.
-3. **Validate Permissions on Every Request**: Check permissions every time a request is made, regardless of where it's coming from. Use tools or frameworks that allow consistent permission checks.
-4. **Thoroughly Review Tools and Technologies**: Be careful with third-party components. Even popular libraries can have vulnerabilities. Make sure you understand what you're using and implement custom logic if necessary.
-5. **Prefer Attribute-Based Access Control (ABAC)**: Instead of just roles, consider attributes like time of day, location, or user properties for access control. This provides more flexibility and security.
-6. **Protect Lookup IDs**: Don't expose internal identifiers, and make sure users can't manipulate them to access unauthorized resources.
-7. **Secure Static Resources**: Don't forget about securing static files or resources. Make sure they're included in your access control policies.
-8. **Verify Authorization Checks**: Always perform access control checks on the server side. Don't rely on client-side checks, which can be easily bypassed.
-9. **Handle Authorization Failures**: Plan for what happens when access is denied. Make sure your application exits safely and doesn't end up in an unstable state.
-10. **Implement Logging**: Logging is crucial for detecting and investigating security incidents. Make sure you log the right amount of information securely.
-11. **Test Authorization Logic**: Unit and integration tests are essential for ensuring your access control works as expected. Test different scenarios to catch potential flaws early on.
+OWASP identifies several common Authorization vulnerabilities, including:
 
-By following these guidelines, you can build a more secure and robust authorization system for your application.
+- Insufficient or ineffective access control checks: Failing to properly verify user permissions before allowing access to sensitive functionalities or data.
+- Improperly configured role-based access control (RBAC): Misconfiguring RBAC policies, leading to either overly permissive or restrictive access permissions.
+- Insecure default settings: Using insecure default settings for access control mechanisms, such as granting unnecessary privileges to default users or roles.
+- Lack of fine-grained access control: Failing to granularly define access permissions for different user roles or resources, leading to potential privilege escalation or unauthorized access.
+- Inadequate session management: Failing to properly manage user sessions, leading to session fixation or session hijacking attacks that can bypass authorization controls.
+- Failure to enforce separation of duties: Allowing users to perform conflicting roles or actions within the system without appropriate checks, increasing the risk of unauthorized access or misuse.
+
+## Mitigation Strategies
+
+To mitigate Authorization vulnerabilities, developers should implement the following strategies:
+
+- Adopt principle of least privilege: Grant users the minimum level of access required to perform their tasks, reducing the potential impact of security breaches.
+- Implement role-based access control (RBAC): Define roles and permissions based on user roles or attributes and enforce access control policies accordingly.
+- Use attribute-based access control (ABAC): Implement access control based on user attributes, environmental conditions, or other contextual factors to provide more granular control over access.
+- Regularly review and update access control policies: Continuously review and update access control policies to reflect changes in user roles, system configurations, or business requirements.
+- Perform security testing and code reviews: Conduct regular security testing, including penetration testing and code reviews, to identify and address potential authorization vulnerabilities.
+- Implement secure session management: Use secure session management practices, such as session expiration, session rotation, and session revocation, to prevent session-related attacks and unauthorized access.
+- Enforce separation of duties: Ensure that users are only allowed to perform actions that are consistent with their roles and responsibilities within the system, minimizing the risk of unauthorized access or misuse.
+- Monitor and audit access activities: Log access control-related events and regularly audit access activities to detect and respond to unauthorized access attempts or suspicious behavior.
+
+## Scenario 1:
+
+The application allows regular users to access administrative functionalities without proper authorization, violating the principle of least privilege and posing a security risk.
+
+```
+https://example.com/app/getUserInfo
+https://example.com/app/admin_getUserInfo
+```
+
+## Scenario 2:
+
+The application fails to enforce fine-grained access control, allowing users to perform actions beyond their authorized scope or role.
+
+```
+if (userRole.equals("admin")) {
+    // Perform admin-specific actions
+} else {
+    // Perform regular user actions
+}
+```
+
+Addressing these vulnerabilities through proper authorization mechanisms enhances the security posture of web applications and helps prevent unauthorized access and data breaches.
 
 ## Let's Connect
 
