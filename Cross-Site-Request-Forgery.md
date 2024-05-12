@@ -29,8 +29,6 @@ To mitigate CSRF vulnerabilities, developers should implement the following stra
 The application doesn't include Anti-CSRF tokens in its forms. An attacker can craft a malicious form and trick users into submitting it, causing unintended actions on their behalf.
 
 ```
-html
-
 <form action="https://example.com/app/transferFunds" method="post">
     <input type="hidden" name="toAccount" value="attackerAccount" />
     <input type="hidden" name="amount" value="1000" />
@@ -44,8 +42,6 @@ html
 The application fails to validate the SameSite attribute for its session cookies. Attackers can create malicious websites that, when visited by authenticated users, trigger unintended actions on the target site.
 
 ```
-javascript
-
 // Malicious website
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "https://example.com/app/changePassword", true);
