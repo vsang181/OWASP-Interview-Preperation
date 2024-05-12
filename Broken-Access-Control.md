@@ -10,7 +10,7 @@ Broken Access Control occurs when access control mechanisms fail to enforce poli
 
 OWASP identifies several common Broken Access Control vulnerabilities, including:
 
-- Inadequate enforcement of the principle of least privilege: Granting excessive access privileges to users instead of restricting access to only what is necessary.
+- **Inadequate enforcement of the principle of least privilege**: Granting excessive access privileges to users instead of restricting access to only what is necessary.
 - Bypassing access controls through URL manipulation or session tampering: Exploiting vulnerabilities to change URLs or tamper with session data to gain unauthorized access.
 - Insecure direct object references: Accessing or modifying resources directly through references, bypassing access controls.
 - Missing access controls on API endpoints: Failing to implement proper access controls on API endpoints, leading to unauthorized access to sensitive functionalities.
