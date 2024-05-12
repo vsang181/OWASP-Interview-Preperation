@@ -11,25 +11,25 @@ Broken Access Control occurs when access control mechanisms fail to enforce poli
 OWASP identifies several common Broken Access Control vulnerabilities, including:
 
 - **Inadequate enforcement of the principle of least privilege**: Granting excessive access privileges to users instead of restricting access to only what is necessary.
-- Bypassing access controls through URL manipulation or session tampering: Exploiting vulnerabilities to change URLs or tamper with session data to gain unauthorized access.
-- Insecure direct object references: Accessing or modifying resources directly through references, bypassing access controls.
-- Missing access controls on API endpoints: Failing to implement proper access controls on API endpoints, leading to unauthorized access to sensitive functionalities.
-- Privilege escalation: Unauthorized users gaining elevated privileges, such as administrative rights, and performing actions beyond their authorized scope.
-- Metadata Manipulation: Unauthorized modification of metadata, such as access tokens or cookies, to gain unauthorized access.
-- CORS misconfiguration: Misconfiguring Cross-Origin Resource Sharing (CORS), allowing unauthorized access to resources from different origins.
+- **Bypassing access controls through URL manipulation or session tampering**: Exploiting vulnerabilities to change URLs or tamper with session data to gain unauthorized access.
+- **Insecure direct object references**: Accessing or modifying resources directly through references, bypassing access controls.
+- **Missing access controls on API endpoints**: Failing to implement proper access controls on API endpoints, leading to unauthorized access to sensitive functionalities.
+- **Privilege escalation**: Unauthorized users gaining elevated privileges, such as administrative rights, and performing actions beyond their authorized scope.
+- **Metadata Manipulation**: Unauthorized modification of metadata, such as access tokens or cookies, to gain unauthorized access.
+- **CORS misconfiguration**: Misconfiguring Cross-Origin Resource Sharing (CORS), allowing unauthorized access to resources from different origins.
 
 ## Mitigation Strategies
 
 To mitigate Broken Access Control vulnerabilities, developers should implement the following strategies:
 
-- Implement least privilege principle: Restrict user access to only what is necessary for their role or function within the application.
-- Centralize access control logic: Use centralized access control mechanisms across the application to ensure consistency and reduce the risk of misconfigurations.
-- Enforce proper object-level permissions: Ensure that users can only access and modify resources they own or are authorized to access.
-- Regularly review and update access control rules: Continuously review and update access control rules to align with business requirements and address emerging threats.
-- Secure sensitive files and directories: Protect sensitive files and directories from unauthorized access by implementing proper access controls and directory listing prevention measures.
-- Implement logging and monitoring: Log access control-related events and monitor for suspicious activities, such as repeated unauthorized access attempts.
-- Enforce rate limiting: Limit the number of requests a user can make within a certain time frame to prevent abuse and mitigate the impact of unauthorized access attempts.
-- Implement session management best practices: Use secure session management techniques, such as expiring sessions and implementing session revocation mechanisms, to prevent unauthorized access.
+- **Implement least privilege principle**: Restrict user access to only what is necessary for their role or function within the application.
+- **Centralize access control logic**: Use centralized access control mechanisms across the application to ensure consistency and reduce the risk of misconfigurations.
+- **Enforce proper object-level permissions**: Ensure that users can only access and modify resources they own or are authorized to access.
+- **Regularly review and update access control rules**: Continuously review and update access control rules to align with business requirements and address emerging threats.
+- **Secure sensitive files and directories**: Protect sensitive files and directories from unauthorized access by implementing proper access controls and directory listing prevention measures.
+- **Implement logging and monitoring**: Log access control-related events and monitor for suspicious activities, such as repeated unauthorized access attempts.
+- **Enforce rate limiting**: Limit the number of requests a user can make within a certain time frame to prevent abuse and mitigate the impact of unauthorized access attempts.
+- **Implement session management best practices**: Use secure session management techniques, such as expiring sessions and implementing session revocation mechanisms, to prevent unauthorized access.
 
 ## Scenario 1:
 
