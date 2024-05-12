@@ -43,3 +43,8 @@ I welcome your insights, feedback, and opportunities for collaboration. Together
 I look forward to connecting with fellow cybersecurity enthusiasts and professionals to share knowledge and work together towards a more secure digital environment.
 
   
+4. A01:2021 [Broken Access Control](Broken-Access-Control.md)
+   1. [Authorization](Authorization.md)
+   2. [Insecure Direct Object Reference (IDOR)](Insecure_Direct_Object_Reference.md)
+   3. [Transaction Authorization](Transaction-Authorization.md)
+   4. [Cross-Site Request Forgery (CSRF)](Cross-Site-Request-Forgery.md)
