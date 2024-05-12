@@ -56,7 +56,7 @@ Addressing these vulnerabilities through proper input validation, parameterizati
 - [Injection Prevention in Java](Injection-Prevention-in-Java.md)
 - [SQL Injection Prevention](SQL-Injection-Prevention.md)
 - [Query Parameterization](Query-Parameterization.md)
-- [Cross Site Scripting Prevention](Cross-Site-Scripting-Prevention.md)
+- [Cross Site Scripting (XSS) Prevention](Cross-Site-Scripting-Prevention.md)
 - [DOM based XSS Prevention](DOM-based-XSS-Prevention.md)
 - [XSS Filter Evasion](XSS-Filter-Evasion.md)
 - [Content Security Policy](Content-Security-Policy.md)
