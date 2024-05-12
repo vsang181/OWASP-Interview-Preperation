@@ -1,8 +1,8 @@
 # Broken Access Control
 
-Broken Access Control is a vulnerability in web application security, enabling unauthorized users to access restricted data or perform unauthorized actions. Understanding and addressing this vulnerability is paramount for securing web applications effectively.
+![BrokenAccessControl2](https://github.com/vsang181/OWASP-Interview-Preperation/assets/28651683/6df4eb7b-77f2-4cca-ba82-9316af696c9f)
 
-![image](https://github.com/vsang181/OWASP-Interview-Preperation/assets/28651683/28bfec44-f33e-40ff-a83a-f5622cdb8d70)
+Broken Access Control is a vulnerability in web application security, enabling unauthorized users to access restricted data or perform unauthorized actions. Understanding and addressing this vulnerability is paramount for securing web applications effectively.
 
 ## Definition
 
