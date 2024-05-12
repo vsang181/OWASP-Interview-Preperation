@@ -10,19 +10,19 @@ CSRF is an attack that forces an end user to execute unwanted actions on a web a
 
 OWASP lists several common CSRF vulnerabilities, including:
 
-- Lack of unpredictable tokens: Tokens used to prevent CSRF attacks are predictable or not implemented at all.
-- Absence of token validation: Failure to validate tokens, allowing attackers to forge requests.
-- Excessive trust in client data: Not verifying the integrity of data received from the client, enabling attackers to manipulate requests.
+- **Lack of unpredictable tokens**: Tokens used to prevent CSRF attacks are predictable or not implemented at all.
+- **Absence of token validation**: Failure to validate tokens, allowing attackers to forge requests.
+- **Excessive trust in client data**: Not verifying the integrity of data received from the client, enabling attackers to manipulate requests.
 
 ## Mitigation Strategies
 
 To mitigate CSRF vulnerabilities, developers should implement the following strategies:
 
-- Use Anti-CSRF tokens: Generate unique tokens for each user session and include them in forms or requests. Verify these tokens on the server-side for each sensitive operation.
-- Implement SameSite attribute for Cookies: Utilize the SameSite attribute in cookies to prevent them from being sent along with cross-origin requests, reducing the risk of CSRF attacks.
-- Use HTTP methods effectively: Ensure that sensitive actions, such as changing user settings or performing transactions, are only allowed through safe HTTP methods like POST or PUT.
-- Implement Referer header checking: Validate the Referer header to ensure that requests originate from the expected source, although it's not foolproof due to potential spoofing.
-- Use Double Submit Cookies: Send a randomly generated value in both a cookie and as a request parameter. Verify that the cookie value matches the request parameter to mitigate CSRF attacks.
+- **Use Anti-CSRF tokens**: Generate unique tokens for each user session and include them in forms or requests. Verify these tokens on the server-side for each sensitive operation.
+- **Implement SameSite attribute for Cookies**: Utilize the SameSite attribute in cookies to prevent them from being sent along with cross-origin requests, reducing the risk of CSRF attacks.
+- **Use HTTP methods effectively**: Ensure that sensitive actions, such as changing user settings or performing transactions, are only allowed through safe HTTP methods like POST or PUT.
+- **Implement Referer header checking**: Validate the Referer header to ensure that requests originate from the expected source, although it's not foolproof due to potential spoofing.
+- **Use Double Submit Cookies**: Send a randomly generated value in both a cookie and as a request parameter. Verify that the cookie value matches the request parameter to mitigate CSRF attacks.
 
 ## Scenario 1:
 
