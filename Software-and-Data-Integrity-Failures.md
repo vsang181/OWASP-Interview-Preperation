@@ -49,6 +49,7 @@ Mitigation: Apply secure deserialization practices, such as using type whitelist
 ```
 
 By addressing issues related to software and data integrity failures and implementing appropriate mitigation strategies, developers can enhance the integrity and reliability of their Java applications, safeguarding them against unauthorized changes and malicious activities.
+
 ## Categories
 
 - [Deserialization](Deserialization.md)
