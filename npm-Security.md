@@ -51,6 +51,7 @@ Mitigation: Update to the latest versions of npm packages to patch known securit
 ```
 
 By addressing issues related to npm security and implementing appropriate mitigation strategies, developers can enhance the security of their Node.js applications and protect against potential threats and vulnerabilities.
+
 ## Let's Connect
 
 I welcome your insights, feedback, and opportunities for collaboration. Together, we can make the digital world safer, one challenge at a time.
